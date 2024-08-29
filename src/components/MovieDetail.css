@@ -1,0 +1,52 @@
+/* src/components/MovieDetail.css */
+
+.movie-detail-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Центрирует содержимое по горизонтали */
+    text-align: center; /* Центрирует текст */
+    padding: 20px;
+    background: linear-gradient(to right, #c46fb1, #feb47b); /* Общий фон */
+    min-height: 100vh; /* Чтобы заполнить всю высоту страницы */
+  }
+  
+  .movie-image {
+    width: 30%; /* Ширина изображения */
+    max-width: 600px; /* Максимальная ширина изображения */
+    height: auto; /* Автоматическое изменение высоты для сохранения пропорций */
+    margin-bottom: 20px; /* Отступ снизу для отделения от заголовка */
+    border-radius: 15px; /* Скругление углов изображения
+  }
+  
+.movie-title {
+  font-size: 2.5rem; /* Размер шрифта */
+  color: #641d1d; /* Цвет текста заголовка */
+  text-align: center; /* Выравнивание по центру */
+  margin-bottom: 20px; /* Отступ снизу для отделения от изображения */
+}
+  
+  .movie-description {
+    font-size: 1.2rem; /* Размер шрифта для описания */
+    color: #070707; /* Цвет текста описания */
+    max-width: 800px; /* Максимальная ширина описания */
+    text-align: justify; /* Выравнивание текста по ширине */
+    margin: 0 auto; /* Центрирование блока с описанием */
+    line-height: 1.6; /* Интервал между строками для улучшения читаемости */
+  }
+  
+  .back-button {
+    margin-bottom: 20px; /* Отступ снизу для отделения от изображения */
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #333; /* Цвет фона кнопки */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .back-button:hover {
+    background-color: #752323; /* Цвет фона кнопки при наведении */
+  }
+  

@@ -1,0 +1,51 @@
+/* src/components/CardList.css */
+
+.card-list-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 карточки в ряд */
+  gap: 20px; /* Расстояние между карточками */
+  padding: 20px;
+  background: linear-gradient(to right, #c46fb1, #feb47b); /* Градиент для фона контейнера */
+  min-height: 100vh; /* Обеспечивает, что контейнер будет занимать всю высоту страницы */
+  box-sizing: border-box; /* Учитывает padding в расчете ширины */
+}
+
+.card-list-title {
+  font-size: 2.9rem; /* Размер шрифта заголовка */
+  color: #a50909; /* Цвет шрифта заголовка */
+  margin: 0 auto 20px; /* Автоматические отступы по бокам для центрирования */
+  text-align: center; /* Выравнивание по центру */
+  font-weight: bold; /* Жирный шрифт */
+  text-transform: uppercase; /* Преобразование текста в верхний регистр */
+  padding: 20px 0; /* Отступ сверху и снизу для отделения от других элементов */
+}
+
+.filter-button {
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  margin: 0 auto 20px;
+  padding: 10px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #333; /* Цвет фона кнопки */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.filter-button:hover {
+  background-color: #752323; /* Цвет фона кнопки при наведении */
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #ffa75f, #feb47b); /* Градиент для фона страницы */
+  color: #ffffff; /* Цвет текста */
+}
+
+.container {
+  padding: 20px;
+}

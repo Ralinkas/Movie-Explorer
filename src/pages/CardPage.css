@@ -1,0 +1,26 @@
+.card-page {
+  padding: 16px;
+}
+
+.back-button {
+  margin-bottom: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+}
+
+.card-title {
+  margin-top: 16px;
+}
+
+.card-description {
+  margin-top: 8px;
+}

@@ -1,0 +1,63 @@
+/* src/components/Card.css */
+.card {
+  background-color: #ffffff; /* Белый фон для карточек */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* Для скругления углов изображения */
+  position: relative; /* Для позиционирования иконок */
+  cursor: pointer; /* Указатель при наведении */
+  transition: transform 0.3s ease; /* Плавный эффект при наведении */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Центрирование контента по горизонтали */
+  text-align: center; /* Центрирование текста */
+}
+
+.card:hover {
+  transform: scale(1.02); /* Легкое увеличение карточки при наведении */
+}
+
+.card-image {
+  width: 100%;
+  height: auto; /* Обеспечивает правильное масштабирование изображений */
+  border-bottom: 2px solid #f0f0f0; /* Легкая линия между изображением и контентом */
+}
+
+.card-content {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Центрирование контента внутри карточки */
+}
+
+.card-title {
+  font-size: 1.5rem;
+  margin: 0;
+  color: #333; /* Темный цвет для заголовка */
+}
+
+.card-description {
+  font-size: 1rem;
+  color: #666; /* Более светлый цвет для описания */
+  margin: 10px 0 0;
+}
+
+.card-actions {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  justify-content: space-between;
+  width: calc(100% - 20px); /* Учитывает отступы */
+}
+
+.like-icon, .delete-icon {
+  font-size: 1.5rem;
+  color: #050505; /* Темный цвет иконок */
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.like-icon.liked {
+  color: #e74c3c; /* Цвет для активного лайка */
+}
